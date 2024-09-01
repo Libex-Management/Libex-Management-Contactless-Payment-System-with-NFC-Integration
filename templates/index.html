@@ -1,0 +1,16 @@
+<!-- # Main landing page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cashless Payment System</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Cashless Payment System</h1>
+    <a href="{{ url_for('nfc_payment_page') }}">NFC Payment</a>
+    <a href="{{ url_for('qr_payment_page') }}">QR Code Payment</a>
+  </body>
+</html>

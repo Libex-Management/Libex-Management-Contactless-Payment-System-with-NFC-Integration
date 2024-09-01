@@ -1,0 +1,5 @@
+Flask==2.3.2
+pyqrcode==1.2.1
+pypng==0.20220715.0  # Updated version
+Pillow==9.1.1
+nfcpy==1.0.4

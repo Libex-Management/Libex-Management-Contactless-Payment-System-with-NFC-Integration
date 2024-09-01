@@ -1,0 +1,20 @@
+<!-- Page for QR code payment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QR Code Payment</title>
+  </head>
+  <body>
+    <h1>QR Code Payment</h1>
+    <form method="POST">
+      <label for="amount">Enter Amount:</label>
+      <input type="text" name="amount" id="amount" />
+      <button type="submit">Generate QR Code</button>
+    </form>
+    {% if qr_code %}
+    <img src="{{ url_for('serve_qr_code', amount=amount) }}" alt="QR Code" />
+    {% elif error %}
+    <p style="color: red">{{ error }}</p>
+    {% endif %}
+  </body>
+</html>
